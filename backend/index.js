@@ -47,7 +47,7 @@ app.use("/images", express.static("upload/images"));
 app.post("/upload", upload.single("product"), (req, res) => {
   res.json({
     success: true,
-    imageUrl: `http://localhost:${port}/images/${req.file.filename}`,
+    imageUrl: `https://ecommerce-app-nz3d.onrender.com/images/${req.file.filename}`,
   });
 });
 
