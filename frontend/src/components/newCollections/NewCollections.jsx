@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 const NewCollections = () => {
   const [new_collections, setNewCollections] = useState([])
   useEffect(() => {
-    fetch('http://localhost:4000/newcollections').then((res) => res.json()).then((data) => setNewCollections(data))
+    fetch('https://ecommerce-app-nz3d.onrender.com/newcollections').then((res) => res.json()).then((data) => setNewCollections(data))
   },[])
   return (
     <div className='new-collections'>
