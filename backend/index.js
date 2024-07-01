@@ -17,7 +17,7 @@ app.use(cors());
 
 //database connection with mongodb
 mongoose.connect(
-  MONGODB_URI
+  'mongodb+srv://ayushmitra06:jbIkmuAdwcnbCDXF@cluster0.re9gf37.mongodb.net/e-commerce?retryWrites=true&w=majority'
 ).then(() => {
   console.log('Connected to e-commerce database');
 }).catch((error) => {
